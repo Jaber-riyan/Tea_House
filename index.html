@@ -9,6 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b8034c1299.js"
+      crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <title>Tea House</title>
     <style>
       .font-manrope {
@@ -17,5 +31,38 @@
     </style>
   </head>
   <body class="font-manrope">
+    <main class="w-4/5 mx-auto px-10 lg:px-16">
+      <!-- header section start -->
+      <header class="md:flex justify-between items-center lg:flex pt-14 mb-20">
+        <!-- header text content  -->
+        <div class="w-[48%]">
+          <h1 class="font-extrabold text-6xl mb-7 leading-[5.5rem]">
+            It's good <br />tea time at The Tea House
+          </h1>
+          <p class="text-[#777777] font-medium mb-7">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="bg-gradient-to-l from-[#FF0000] to-[#FF8938] py-3 px-4 rounded-xl text-white font-bold text-lg">
+            Explore More
+            <img class="inline ml-2" src="./images/arrow.png" alt="" />
+          </button>
+        </div>
+        <!-- header image content  -->
+        <div class="w-[49%]">
+          <img  src="./images/banner.png" alt="" />
+          <div
+            class="md:flex md:justify-center md:gap-4 items-center py-3 px-5 bg-[#ffffff] absolute rounded-xl top-[58%] right-[32%] shadow-lg">
+            <i class="fa-solid fa-star" style="color: #ffc800; font-size: 1.7rem;"></i>
+            <div>
+              <h3 class="text-3xl font-extrabold">5.0</h3>
+              <p class="text-xs text-[#777777]">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header section end -->
+    </main>
   </body>
 </html>
